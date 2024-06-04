@@ -1,0 +1,11 @@
+-*- mode: compilation; default-directory: "d:/Project/learn/learnalgorithm/sort/" -*-
+Compilation started at Tue May 21 12:31:10
+
+g++ -g -O0 -Wall -o merge_sort.exe merge_sort.cpp && ./merge_sort.exe
+Given array is 
+12 11 13 5 6 7 
+
+Sorted array is 
+5 6 7 11 12 13 
+
+Compilation finished at Tue May 21 12:31:13
