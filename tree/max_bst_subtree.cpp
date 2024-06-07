@@ -41,8 +41,8 @@ TreeInfo maxBSTSubtree(TreeNode *node, int &maxSize) {
     currInfo.max = max(rightInfo.max, node->val);
     // 下面这种写法是不对的，临界条件如果此时节点是叶子节点，左右子树都是空，此时它的leftInfo.min的值为INT_MAX，rightInfo.max的值为INT_MIN
     // 所以需要min(leftInfo.min, node->val)和max(rightInfo.max,
-    // node->val)判断一下 currInfo.min = leftInfo.min; currInfo.max =
-    // rightInfo.max;
+    // node->val)判断一下
+    // currInfo.min = leftInfo.min; currInfo.max = rightInfo.max;
 
     // 更新找到的最大BST的大小
     // 将 maxSize
