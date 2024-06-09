@@ -62,6 +62,7 @@ int findMaximizedCapital(int k, int W, vector<int> &Profits,
       minCostHeap.pop();
     }
 
+    // 有可能总金额不支持继续做下一个项目。做不够k个，项目直接结束
     if (maxProfitHeap.empty()) {
       break;
     }
