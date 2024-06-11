@@ -132,7 +132,7 @@ public:
 };
 
 int main() {
-  Graph g(true); // 创建一个有向图
+  // Graph g(true); // 创建一个有向图
 
   // Vertex *v1 = g.addVertex(1, 10);
   // Vertex *v2 = g.addVertex(2, 20);
