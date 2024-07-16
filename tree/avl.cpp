@@ -144,9 +144,8 @@ public:
 
   // 删除节点
   Node *deleteNode(Node *root, int key) {
-    if (root == nullptr) {
-      return root;
-    }
+    if (!root)
+      return nullptr;
 
     // 递归找到要删除的节点
     if (key < root->key) {
@@ -179,8 +178,9 @@ public:
       }
     }
 
+    // 不能省略。处理删除了当前节点后，可能导致当前处理的节点变为 nullptr
     if (!root)
-      return root;
+      return nullptr;
 
     return rebalance(root);
   }
